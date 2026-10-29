@@ -1,8 +1,8 @@
-# Actividad4
--Fer Arriaga
-1. Implementar marcador de puntuación<rb>
-2. Implementar control para el cambio de gravedad
+# Actividad 4
+Fer Arriaga:<rb>
+- Implementó marcador de puntuación.<rb>
+- Implementó control para el cambio de gravedad.<rb>
 
--Andree Tapia
-3.
-4.
+Andree Tapia:<rb>
+- Implementó gravedad a los objetivos.<rb>
+
