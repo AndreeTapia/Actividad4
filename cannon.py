@@ -13,7 +13,7 @@ from turtle import *
 
 from freegames import vector
 
-
+gravity = 0.35
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
@@ -71,7 +71,8 @@ def move():
         target.x -= 0.5
     
     if inside(ball):
-        speed.y -= 0.35
+        global gravity
+        speed.y -= gravity
         ball.move(speed)
     
     dupe = targets.copy()
@@ -94,6 +95,16 @@ def move():
     ontimer(move, 50)
 
 
+def mas_gravedad():
+    global gravity
+    gravity += 0.05
+    print("Gravedad:", round(gravity, 2))
+
+def menos_gravedad():
+    global gravity
+    if gravity > 0.05:
+        gravity -= 0.05
+    print("Gravedad:", round(gravity, 2))
 
 
 setup(420, 420, 370, 0)
@@ -101,5 +112,8 @@ hideturtle()
 up()
 tracer(False)
 onscreenclick(tap)
+listen()
+onkey(mas_gravedad, 'Up')     # Flecha arriba aumenta la gravedad
+onkey(menos_gravedad, 'Down') # Flecha abajo disminuye la gravedad
 move()
 done()
