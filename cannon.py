@@ -69,7 +69,8 @@ def move():
 
     for target in targets:
         target.x -= 0.5
-    
+        target.y -= 0.3
+
     if inside(ball):
         global gravity
         speed.y -= gravity
