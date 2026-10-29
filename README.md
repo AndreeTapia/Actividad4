@@ -5,4 +5,4 @@ Fer Arriaga:<rb>
 
 Andree Tapia:<rb>
 - Implementó gravedad a los objetivos.<rb>
-
+- Implementó una velocidad distinta al proyectil.
